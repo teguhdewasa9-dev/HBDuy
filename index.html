@@ -17,6 +17,7 @@ overflow-x:hidden;
 overflow-y:auto;
 text-align:center;
 font-family: 'Patrick Hand', cursive;
+font-size:4vw; /* RESPONSIVE */
 }
 
 /* MATRIX FULL LAYAR */
@@ -33,7 +34,7 @@ position:absolute;
 top:50%;
 left:50%;
 transform:translate(-50%,-50%);
-font-size:180px;
+font-size:25vw; /* DARI 180px */
 font-weight:bold;
 background:linear-gradient(45deg,#ff9ad5,#ff69b4,#ffc0cb);
 -webkit-background-clip:text;
@@ -44,81 +45,85 @@ font-family: 'Fredoka One', cursive;
 
 /* TEKS UTAMA DI ATAS FOTO */
 #mainText{
-font-size:60px;
+font-size:10vw; /* DARI 60px */
 color:#ff69b4;
 display:none;
 text-shadow:0 0 20px pink;
-margin-bottom:20px;
+margin-bottom:5vw;
 font-family: 'Chalk Dash', cursive;
 }
 
 /* KARTU / FOTO */
 #card{
-margin-top:40vh;
+margin-top:30vh;
 background:#fff0f6;
-padding:25px;
-border-radius:25px;
+padding:5vw;
+border-radius:5vw;
 box-shadow:0 0 25px #ffc0cb;
-width:400px;
+width:90%; /* DARI 400px */
+max-width:400px; /* BIAR GA KEGEDEAN DI PC */
 margin-left:auto;
 margin-right:auto;
 display:none;
 }
 
-/* FOTO KIRI, TENGAH & KANAN */
+/* FOTO */
 #card .img-stack{
 position:relative;
-height:220px;
-margin-bottom:10px;
+height:50vw; /* DARI 220px */
+max-height:220px;
+margin-bottom:3vw;
 }
 
 #card .img-stack img{
 position:absolute;
-width:120px;
-border-radius:15px;
+width:30vw; /* DARI 120px */
+max-width:120px;
+border-radius:3vw;
 box-shadow:0 0 15px #ffc0cb;
 }
 
-/* Miring kiri */
+/* POSISI FOTO */
 #card .img-left{
 left:0;
 top:0;
 transform:rotate(-5deg);
 }
 
-/* Tegak tengah */
 #card .img-center{
-left:140px;
+left:35%;
 top:0;
 transform:rotate(0deg);
 }
 
-/* Miring kanan */
 #card .img-right{
 right:0;
 top:0;
 transform:rotate(5deg);
 }
 
-/* TEKS BAWAH FOTO FONT BUBBLE */
+/* TEKS */
 #card p{
 font-family: 'Bubblegum Sans', cursive;
-font-size:20px;
+font-size:4.5vw; /* DARI 20px */
+max-font-size:20px;
 color:#ff69b4;
-margin:5px 0;
+margin:2vw 0;
 }
 
 /* BUTTON MUSIC */
 #musicBtn{
 position:fixed;
-bottom:20px;
-right:20px;
-font-size:30px;
+bottom:5vw;
+right:5vw;
+font-size:6vw;
 background:#ffc0cb;
 border:none;
 border-radius:50%;
-width:70px;
-height:70px;
+width:15vw;
+height:15vw;
+max-width:70px;
+max-height:70px;
 cursor:pointer;
 box-shadow:0 0 20px pink;
 }
@@ -126,14 +131,16 @@ box-shadow:0 0 20px pink;
 /* BUTTON SURPRISE */
 #surpriseBtn{
 position:fixed;
-bottom:20px;
-left:20px;
-font-size:30px;
+bottom:5vw;
+left:5vw;
+font-size:6vw;
 background:#ffc0cb;
 border:none;
 border-radius:50%;
-width:70px;
-height:70px;
+width:15vw;
+height:15vw;
+max-width:70px;
+max-height:70px;
 cursor:pointer;
 box-shadow:0 0 20px pink;
 }
